@@ -18,7 +18,9 @@ Extra-Source-Files:  changelog.md
 
 cabal-version:       >=1.10
 
-data-files:          ./data/
+data-files:          ./data/wikicfp.v1.2008.xml.gz
+                     ./data/wikicfp.v1.2009.xml.gz
+                     ./data/wikicfp.v1.2010.xml.gz
 
 source-repository head
   type:     git
@@ -29,7 +31,7 @@ library
   hs-source-dirs:      src
 
   exposed-modules:     Text.WikiCFP
-  other-modules:       Paths_wikicfp-parser
+--  other-modules:       Paths_wikicfp-parser
 
   build-depends:       base >=4.7 && <6,
                        xml,
